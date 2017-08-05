@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XrnCourse.ImagesExample"
-             x:Class="XrnCourse.ImagesExample.MainPage">
+             x:Class="XrnCourse.ImagesExample.MainPage"
+             Padding="0,20,0,0">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <AbsoluteLayout>
+        <Image Aspect="AspectFit"
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS,Android">clouds.jpg</On>
+                    <On Platform="Windows">images/clouds.jpg</On>
+                </OnPlatform>
+            </Image.Source>
+        </Image>
+    </AbsoluteLayout>
 </ContentPage>
