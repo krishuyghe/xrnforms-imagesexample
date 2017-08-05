@@ -21,5 +21,9 @@
                Aspect="AspectFit"
                AbsoluteLayout.LayoutFlags="PositionProportional"
                AbsoluteLayout.LayoutBounds="0.6 ,0.4, 256, 54" />
+        <Image Source="https://raw.githubusercontent.com/sigged/xrnforms-imagesexample/master/XrnCourse.ImagesExample/XrnCourse.ImagesExample/images/glider.png"
+               Aspect="AspectFit"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               AbsoluteLayout.LayoutBounds="0.7 ,0.3, 128, 27" />
     </AbsoluteLayout>
 </ContentPage>
