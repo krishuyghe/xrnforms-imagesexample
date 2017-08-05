@@ -5,8 +5,8 @@
              x:Class="XrnCourse.ImagesExample.MainPage"
              Padding="0,20,0,0">
 
-    <AbsoluteLayout>
-        <Image Aspect="AspectFit"
+    <AbsoluteLayout x:Name="absLayout">
+        <Image Aspect="AspectFill"
                 AbsoluteLayout.LayoutFlags="All"
                 AbsoluteLayout.LayoutBounds="0,0,1,1">
             <Image.Source>
