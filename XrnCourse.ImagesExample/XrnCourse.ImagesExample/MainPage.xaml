@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XrnCourse.ImagesExample"
+             xmlns:extensions="clr-namespace:XrnCourse.ImagesExample.Extensions"
              x:Class="XrnCourse.ImagesExample.MainPage"
              Padding="0,20,0,0">
 
@@ -16,5 +17,9 @@
                 </OnPlatform>
             </Image.Source>
         </Image>
+        <Image Source="{extensions:ImageResource XrnCourse.ImagesExample.images.glider.png}"
+               Aspect="AspectFit"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               AbsoluteLayout.LayoutBounds="0.6 ,0.4, 256, 54" />
     </AbsoluteLayout>
 </ContentPage>
